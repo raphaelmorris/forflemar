@@ -2,7 +2,7 @@
   "name": "forflemar",
   "displayName": "forflemar",
   "description": "Une extension qui regroupe tous les raccourcis pour le développement Wordpress sous Bedrock et pour les flemmards.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "RaphaelMorris",
   "icon": "https://github.com/raphaelmorris/forflemar/blob/main/images/icon.png",
   "engines": {
