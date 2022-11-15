@@ -1,0 +1,281 @@
+{
+    "Make Email": {
+        "prefix": "::mail",
+        "body": [
+            "Email::make('$1','$2')",
+            "    ->instructions('$3')"
+        ],
+        "description": "Make Email"
+    },
+    "Make Number": {
+        "prefix": "::number",
+        "body": [
+            "Number::make('$1','$2')",
+            "    ->instructions('$3')",
+            "    ->min($4)",
+            "    ->max($5)"
+        ],
+        "description": "Make Number"
+    },
+    "Make Pwd": {
+        "prefix": "::pass",
+        "body": [
+            "Password::make('$1','$2')",
+            "    ->instructions('$3.')"
+        ],
+        "description": "Make Pwd"
+    },
+    "Make Range": {
+        "prefix": "::range",
+        "body": [
+            "Range::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->min(${4:0})",
+            "    ->max(${5:100})",
+            "    ->step(${6:10})"
+        ],
+        "description": "Make Range"
+    },
+    "make Img": {
+        "prefix": "::img",
+        "body": [
+            "Image::make('${1:nom}','${2:slug}')",
+            "->instructions('Téléverser une image')",
+            "->mimeTypes(['jpg', 'jpeg', 'png'])",
+            "->fileSize(0, 1)",
+            "->returnFormat('array')",
+            "->previewSize('${3:thumbnail, medium or large}')"
+        ],
+        "description": "make Img"
+    },
+    "Make Text": {
+        "prefix": "::text",
+        "body": [
+            "Text::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->characterLimit(100)"
+        ],
+        "description": "Make Text"
+    },
+    "make Textarea": {
+        "prefix": "::area",
+        "body": [
+            "Textarea::make('${1:nom}','${2:slug}')",
+            "->newLines('br')",
+            "->characterLimit(2000)",
+            "->rows(${3:number})"
+        ],
+        "description": "make textarea"
+    },
+    "Make Url": {
+        "prefix": "::url",
+        "body": [
+            "Url::make('$1','$2')",
+            "    ->instructions('$3.')"
+        ],
+        "description": "Make Url"
+    },
+    "Make Button": {
+        "prefix": "::button",
+        "body": [
+            "ButtonGroup::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->choices([",
+            "        '${4:value}' => '${5:Name}',",
+            "        '${6:value}' => '${7:Name}',",
+            "    ])",
+            "    ->defaultValue('$4')",
+            "    ->returnFormat('${8:array, label or value (default)}') "
+        ],
+        "description": "Make Button"
+    },
+    "Make Checkbox": {
+        "prefix": "::checkbox",
+        "body": [
+            "Checkbox::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->choices([",
+            "        '${4:value}' => '${5:Name}',",
+            "        '${6:value}' => '${7:Name}',",
+            "    ])",
+            "    ->defaultValue('$4')",
+            "    ->returnFormat('${8:array, label or value (default)}') ",
+            "    ->layout('${9:vertical or horizontal}')"
+        ],
+        "description": "Make Checkbox"
+    },
+    "Make Select": {
+        "prefix": "::select",
+        "body": [
+            "Select::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->choices([",
+            "        '${4:value}' => '${5:Name}',",
+            "        '${6:value}' => '${7:Name}',",
+            "    ])",
+            "    ->defaultValue('$4')",
+            "    ->returnFormat('${8:array, label or value (default)}') ",
+            "    ->allowMultiple()",
+            "    ->allowNull()"
+        ],
+        "description": "Make Select"
+    },
+    "Make True/False": {
+        "prefix": "::truefalse",
+        "body": [
+            "TrueFalse::make('$1', '$2')",
+            "    ->instructions('$3.')",
+            "    ->defaultValue(${4:false or true})",
+            "    ->stylisedUi()"
+        ],
+        "description": "Make True/False"
+    },
+    "Make File": {
+        "prefix": "::file",
+        "body": [
+            "File::make('$1', '$2')",
+            "    ->instructions('$3.')",
+            "    ->mimeTypes(['pdf'])",
+            "    ->library('all')",
+            "    ->fileSize('$4', '$5')",
+            "    ->returnFormat('array')"
+        ],
+        "description": "Make File"
+    },
+    "Make Gallery": {
+        "prefix": "::gallery",
+        "body": [
+            "Gallery::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->mimeTypes(['jpg', 'jpeg', 'png'])",
+            "    ->height(${4:500}, ${5:1400})",
+            "    ->width(${6:1000}, ${7:2000})",
+            "    ->min(${8:1})",
+            "    ->max(${9:6})",
+            "    ->fileSize($10, $11)",
+            "    ->library('all')",
+            "    ->returnFormat('array')",
+            "    ->previewSize('${12:thumbnail, medium or large}')"
+        ],
+        "description": "Make Gallery"
+    },
+    "Make link": {
+        "prefix": "::link",
+        "body": [
+            "Link::make('$1','$2')",
+            "    ->returnFormat('array')"
+        ],
+        "description": "Make link"
+    },
+    "Make Wysiwig": {
+        "prefix": "::wysiwyg",
+        "body": [
+            "WysiwygEditor::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->mediaUpload(${4:true or false})",
+            "    ->tabs('visual')",
+            "    ->toolbar('simple')"
+        ],
+        "description": "Make Wysiwig"
+    },
+    "Make Colorpicker": {
+        "prefix": "::colorpicker",
+        "body": [
+            "ColorPicker::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->defaultValue('#ffffff')"
+        ],
+        "description": "Make Colorpicker"
+    },
+    "Make Datepicker": {
+        "prefix": "::datepicker",
+        "body": [
+            "DatePicker::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->displayFormat('d/m/Y')",
+            "    ->returnFormat('d/m/Y')"
+        ],
+        "description": "Make Datepicker"
+    },
+    "Make Timepicker": {
+        "prefix": "::timepicker",
+        "body": [
+            "TimePicker::make('$1', '$2')",
+            "    ->instructions('$3.')",
+            "    ->displayFormat('H:i')",
+            "    ->returnFormat('H:i')"
+        ],
+        "description": "Make Timepicker"
+    },
+    "Make Datetimepicker": {
+        "prefix": "::datetimepicker",
+        "body": [
+            "DateTimePicker::make('$1', '$2')",
+            "    ->instructions('$3.')",
+            "    ->displayFormat('d-m-Y H:i')",
+            "    ->returnFormat('d-m-Y H:i')"
+        ],
+        "description": "Make Datetimepicker"
+    },
+    "Make Gmap": {
+        "prefix": "::googlemap",
+        "body": [
+            "GoogleMap::make('$1', '$2')",
+            "    ->instructions('$3.')",
+            "    ->center(${4:coordonnées du centre})",
+            "    ->zoom(${5:14})"
+        ],
+        "description": "Make Gmap"
+    },
+    "Make Flexible": {
+        "prefix": "::flexible",
+        "body": [
+            "FlexibleContent::make('$1', '$2')",
+            "    ->instructions('$3.')",
+            "    ->buttonLabel('${4:Ajouter une section}')",
+            "    ->layouts([",
+            "        Layout::make('$5')",
+            "            ->layout('block')",
+            "            ->fields([",
+            "                \t$6",
+            "            ])",
+            "    ])"
+        ],
+        "description": "Make Flexible"
+    },
+    "Make Groupe": {
+        "prefix": "::group",
+        "body": [
+            "Group::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->fields([",
+            "        \t$4",
+            "    ])",
+            "    ->layout('row')"
+        ],
+        "description": "Make Groupe"
+    },
+    "Make Repeater": {
+        "prefix": "::repeater",
+        "body": [
+            "Repeater::make('$1','$2')",
+            "    ->instructions('$3.')",
+            "    ->fields([",
+            "        \t$4",
+            "    ])",
+            "    ->min(2)",
+            "    ->collapsed('$5')",
+            "    ->buttonLabel('$6')",
+            "    ->pagination(10)",
+            "    ->layout('${7:block, row or table}')"
+        ],
+        "description": "Make Repeater"
+    },
+    "Make Tab": {
+        "prefix": "::tab",
+        "body": [
+          "Tab::make('$1','$2'),"
+        ],
+        "description": "Make Tab"
+      }
+}

@@ -1,0 +1,51 @@
+{
+    "php": {
+		"prefix": "php",
+		"body": [
+			"<?php $0 ?>"
+		],
+		"description": "php tag"
+	},
+	"pecho": {
+		"prefix": "=",
+		"body": [
+			"<?= $0 ?>"
+		],
+		"description": "php echo tag"
+	},
+	"if": {
+		"prefix": "if",
+		"body": [
+			"<?php if($0): ?>"
+		],
+		"description": "endif"
+	},
+	"endif": {
+		"prefix": "endif",
+		"body": [
+			"<?php endif; ?>"
+		],
+		"description": "endif"
+	},
+	"if_get_field": {
+		"prefix": "ifget",
+		"body": [
+			"<?php if(get_field('$0')): ?>"
+		],
+		"description": "if get field"
+	},
+	"get_field": {
+		"prefix": "get",
+		"body": [
+			"<?= get_field('$0'); ?>"
+		],
+		"description": "get field"
+	},
+	"get_sub_field": {
+		"prefix": "getsub",
+		"body": [
+			"<?= get_sub_field('$0'); ?>"
+		],
+		"description": "get sub field"
+	}
+}

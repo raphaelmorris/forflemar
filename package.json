@@ -1,0 +1,29 @@
+{
+  "name": "forflemar",
+  "displayName": "forflemar",
+  "description": "Une extension qui regroupe tous les raccourcis pour le développement Wordpress sous Bedrock et pour les flemmards.",
+  "version": "0.0.1",
+  "publisher": "RaphaelMorris",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "php",
+        "path": "./snippets/make.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/createFile.json"
+      }
+    ]
+  }
+}
