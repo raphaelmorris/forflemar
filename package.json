@@ -2,7 +2,7 @@
   "name": "led-snippets",
   "displayName": "led-snippets",
   "description": "Une extension qui regroupe tous les raccourcis pour le développement Wordpress sous Bedrock et pour les flemmards.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "RaphaelMorris",
   "icon": "images/icon.png",
   "engines": {
