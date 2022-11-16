@@ -1,0 +1,41 @@
+{
+    "Système de tab avec 3 boutons": {
+        "prefix": "html:tab",
+        "body": [
+            "<div class=\"tabs\">",
+            "\t<button class=\"tabs_button active\" onclick=\"changeTabs(event, '$1')\">$2</button>",
+            "\t<button class=\"tabs_button\" onclick=\"changeTabs(event, '$3')\">$4</button>",
+            "\t<button class=\"tabs_button\" onclick=\"changeTabs(event, '$5')\">$6</button>",
+            "</div>",
+            "<div id=\"$1\" class=\"tabcontent\" style=\"display:block;\">",
+            "\tContent",
+            "</div>",
+            "<div id=\"$3\" class=\"tabcontent\" style=\"display:none;\">",
+            "\tContent",
+            "</div>",
+            "<div id=\"$5\" class=\"tabcontent\" style=\"display:none;\">",
+            "\tContent",
+            "</div>$0",
+            "",
+            "",
+            "",
+            "<!-- FONCTION JS A INTEGRER DANS UN FICHIER JS -->",
+            "<script>",
+            "function changeTabs(evt, tabName) {",
+            "  var i, tabcontent, tabname;",
+            "  tabcontent = document.getElementsByClassName(\"tabcontent\");",
+            "  for (i = 0; i < tabcontent.length; i++) {",
+            "    tabcontent[i].style.display = \"none\";",
+            "  }",
+            "  tabname = document.getElementsByClassName(\"tabs_button\");",
+            "  for (i = 0; i < tabname.length; i++) {",
+            "    tabname[i].className = tabname[i].className.replace(\" active\", \"\");",
+            "  }",
+            "  document.getElementById(tabName).style.display = \"block\";",
+            "  evt.currentTarget.className += \" active\";",
+            "}",
+            "</script>"
+        ],
+        "description": "Système de tab avec 3 boutons"
+    }
+}

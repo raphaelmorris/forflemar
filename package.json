@@ -1,30 +1,40 @@
 {
-  "name": "led-snippets",
-  "displayName": "led-snippets",
-  "description": "Une extension qui regroupe tous les raccourcis pour le développement Wordpress sous Bedrock et pour les flemmards.",
-  "version": "0.3.0",
-  "publisher": "RaphaelMorris",
-  "icon": "images/icon.png",
-  "engines": {
-    "vscode": "^1.73.0"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
-      },
-      {
-        "language": "php",
-        "path": "./snippets/make.json"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/createFile.json"
-      }
-    ]
-  }
+	"name": "led-snippets",
+	"displayName": "led-snippets",
+	"description": "Une extension qui regroupe tous les raccourcis pour le développement Wordpress sous Bedrock et pour les flemmards.",
+	"version": "0.3.0",
+	"publisher": "RaphaelMorris",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.73.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.code-snippets"
+			},
+			{
+				"language": "php",
+				"path": "./snippets/make.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/inteHtml.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/createFile.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "fb1f540d-fe90-4522-b779-ff2d9b7ae016",
+		"publisherDisplayName": "Raphael Morris",
+		"publisherId": "01436260-1fdb-4f27-923f-43b348b2d14e",
+		"isPreReleaseVersion": false
+	}
 }
