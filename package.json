@@ -24,6 +24,10 @@
       {
         "language": "html",
         "path": "./snippets/createFile.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
       }
     ]
   }
